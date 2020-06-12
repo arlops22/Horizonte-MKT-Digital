@@ -1,0 +1,490 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('./assets/fonts/leaguespartan-bold.ttf') format('TrueType');
+    src: url('./assets/fonts/LeagueSpartan-Bold.otf') format('OpenType');
+    src: url('./assets/fonts/leaguespartan-bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./assets/fonts/OpenSans-Regular.ttf') format('TrueType');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('./assets/fonts/OpenSans-Light.ttf') format('TrueType');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('./assets/fonts/OpenSans-Bold.ttf') format('TrueType');
+    font-weight: bold;
+}
+
+/*   RESET   */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1em;
+	font: inherit;
+    vertical-align: baseline;
+    outline: 0;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    line-height: 1.5;
+    color: #1D2830;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: "League Spartan";
+    margin-block-start: 0;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 1.875em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1.125em;
+}
+
+p {
+    display: block;
+    font-family: "Open Sans";
+    font-size: 1em;
+    margin-block-start: 0.875em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  BASE  */
+
+.h-section {
+    padding: 60px 0;
+}
+
+.container-fluid {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.small-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    font-family: "Open Sans Bold";
+    text-transform: uppercase;
+    display: block;
+    box-shadow: 1px 0 8px #62DBE7;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    background: #62DBE7;
+    font-size: 0.875em;
+    padding: 12px 40px;
+    color: #02050F;
+    width: fit-content;
+    position: relative;
+    margin-top: 18px;
+}
+
+.btn-primary:hover {
+    background-color: #086871;
+    color: #fff;
+    box-shadow: none;
+    transition: .3s;
+}
+
+ol {
+    list-style: decimal;
+    margin-left: 14px;
+}
+
+ol li ol li {
+    list-style: lower-alpha;
+    margin-left: 14px;
+}
+
+table tr td {
+    border: 1px solid #141313;
+    padding: 5px;
+}
+
+.h-title {
+    font-family: "League Spartan";
+}
+
+.h-title:before {
+    content: '';
+    height: 5px;
+    width: 24px;
+    margin-bottom: 8px;
+    background-color: #67D8E8;
+    box-shadow: 1px 0 8px #62DBE7;
+    display: block;
+}
+
+.secondary-title {
+    font-family: "League Spartan";
+    text-align: center;
+}
+
+.secondary-title:after {
+    content: '';
+    height: 5px;
+    width: 24px;
+    background-color: #67D8E8;
+    box-shadow: 1px 0 8px #62DBE7;
+    display: block;
+    margin: 8px auto 0 auto;
+}
+
+.sub-title {
+    box-shadow: 1px 0 8px #62DBE7;
+    border-radius: 3px;
+    font-family: "League Spartan";
+    color: #1B4865;
+    background-color: #62DBE7;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding: 6px 30px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto 12px auto;
+}
+
+/*   HEADER   */
+
+.h-header {
+    background-color: #1B4865;
+    padding: 8px 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-header .logo img{
+    width: auto;
+    height: 60px;
+}
+
+.h-menu-nav ul {
+    display: flex;
+}
+
+.h-menu-nav a {
+    font-family: "Open Sans Bold";
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.h-header a {
+    color: #fff;
+    font-size: 0.875em;
+    display: block;
+    padding: 5px 12px;
+    text-transform: uppercase;
+}
+
+.h-header a:hover {
+    color: #62DBE7;
+    transition: 0.3s;
+}
+
+.h-header .logo:hover {
+    color: #fff;
+}
+
+.h-menu-nav, .social-media {
+    display: flex;
+}
+
+.nav-social-links {
+    display: flex;
+}
+
+.nav-social-links a {
+    font-size: 1.125em;
+}
+
+/*   MENU HAMBURGUER   */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background: #fff;
+    border-radius: 5px;
+    display: block;
+    width: 30px;
+    height: 3px;
+}
+
+
+/*     FOOTER     */
+
+.h-footer {
+    color: #F3F0F2;
+}
+
+.footer-map {
+    width: 100%;
+    background-color: #001220;
+    padding: 60px 0;
+}
+
+.footer-map .container {
+    display: flex;
+}
+
+.footer-map img {
+    height: 100px;
+    margin-right: 120px;
+}
+
+.footer-contact {
+    width: 30%;
+}
+
+.footer-contact .contact-info {
+    color: #62DBE7;
+    font-family: "Open Sans Light";
+}
+
+.footer-contact .nav-social-links {
+    margin-top: 60px;
+}
+
+.footer-contact .nav-social-links a {
+    color: #F3F0F2;
+    margin-right: 24px;
+}
+
+.footer-contact .nav-social-links a:hover, .footer-map .h-menu-nav a:hover {
+    color: #62DBE7;
+    transition: .3s;
+}
+
+.footer-map .h-menu-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-map .h-menu-nav a {
+    color: #F3F0F2;
+    margin-bottom: 14px;
+}
+
+.footer-copyright {
+    text-align: center;
+    background-color: #61B6CB;
+    padding: 12px 0;
+}
+
+
+
+/*   HOME   */
+
+
+.home-intro {
+    color: #F3F0F2;
+    padding: 150px 0;
+    background: linear-gradient(90deg, #02050F 60%, transparent 100%),
+                url('./assets/img/Home.jpg') no-repeat right;
+    background-size: contain;
+}
+
+.home-intro .text-box {
+    width: 45%;
+}
+
+.home-intro .text-box .h-title{
+    text-transform: uppercase;
+}
+
+.home-intro .text-box p {
+    font-size: 2em;
+    font-family: "Open Sans Light";
+}
+
+.about-preview {
+    color: #1B4865;
+    text-align: justify;
+}
+
+.about-preview .flex-container {
+    align-items: unset;
+}
+
+.about-preview img {
+    width: 47%;
+}
+
+.about-preview .text-box {
+    width: 50%;
+}
+
+.mkt-preview {
+    text-align: center;
+    color: #F3F0F2;
+    background: url('./assets/img/Background.png');
+    background-attachment: fixed;
+}
+
+.mkt-preview .flex-container {
+    padding: 50px 0;
+}
+
+.procedures p {
+    text-transform: uppercase;
+    font-family: "Open Sans Bold";
+}
+
+.mkt-preview .btn-primary, .blog-preview .btn-primary {
+    margin: 0 auto;
+}
+
+.depoiments {
+    width: 60%;
+    margin: 30px auto 0 auto;
+    text-align: justify;
+}
+
+.client {
+    width: 270px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.client .client-img {
+    width: 70px;
+    height: 70px;
+    background-image: url('./assets/img/client.png');
+    background-size: cover;
+    background-position: top;
+    border-radius: 50%;
+    display: block;
+    margin-right: 24px;
+    border: 5px solid #62DBE7;
+}
+
+.client .client-name {
+    color: #62DBE7;
+    font-family: "Open Sans Bold";
+    margin: 0;
+}
+
+.client .client-job {
+    margin: 0;
+}
+
+
+.blog-preview {
+    background-color: #F8F8F8;
+}
+
+.last-post-box {
+    width: 20%;
+    margin: 36px 0;
+    text-decoration: none;
+}
+
+.last-post-box img {
+    width: 100%;
+    height: auto;
+}
+
+.last-post-box h4 {
+    font-family: "Open Sans Bold";
+    color: #02050F;
+    margin-top: 0.5em
+}
+
+.last-post-box:hover > h4 {
+    color: #5FA8D3;
+    transition: .3s;
+}
