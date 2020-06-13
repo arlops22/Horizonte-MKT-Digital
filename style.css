@@ -67,27 +67,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3em;
-}
-
-h2 {
     font-size: 2.25em;
 }
 
-h3 {
+h2 {
     font-size: 1.875em;
 }
 
-h4 {
+h3 {
     font-size: 1.5em;
 }
 
-h5 {
+h4 {
     font-size: 1.25em;
 }
 
-h6 {
+h5 {
     font-size: 1.125em;
+}
+
+h6 {
+    font-size: 1em;
 }
 
 p {
@@ -121,6 +121,21 @@ table {
     padding: 60px 0;
 }
 
+.dark-section {
+    background-color: #02050F;
+}
+
+.apresentation {
+    padding: 70px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.apresentation p {
+    width: 30%;
+    margin: 0 auto;
+}
+
 .container-fluid {
     width: 95%;
     margin: 0 auto;
@@ -152,13 +167,13 @@ table {
     width: fit-content;
     position: relative;
     margin-top: 18px;
+    transition: .3s;
 }
 
 .btn-primary:hover {
     background-color: #086871;
     color: #fff;
     box-shadow: none;
-    transition: .3s;
 }
 
 ol {
@@ -219,6 +234,14 @@ table tr td {
     margin: 0 auto 12px auto;
 }
 
+.separator {
+    display: block;
+    background-color: #62DBE7;
+    box-shadow: 1px 0 8px #62DBE7;
+    width: 130px;
+    height: 5px;
+}
+
 /*   HEADER   */
 
 .h-header {
@@ -248,6 +271,19 @@ table tr td {
     width: fit-content;
 }
 
+.h-header .h-menu-nav a::after {
+    content: '';
+    display: block;
+    height: 3px;
+    transform: scale(0, 1);
+    background-color: #fff;
+    transition: transform .4s ease-out;
+}
+
+.h-header .h-menu-nav a:hover::after{
+    transform: scale(1);
+}
+
 .menu-item {
     list-style: none;
 }
@@ -258,11 +294,11 @@ table tr td {
     display: block;
     padding: 5px 12px;
     text-transform: uppercase;
+    transition: 0.3s;
 }
 
-.h-header a:hover {
+.h-header .nav-social-links a:hover {
     color: #62DBE7;
-    transition: 0.3s;
 }
 
 .h-header .logo:hover {
@@ -423,7 +459,7 @@ table tr td {
     font-family: "Open Sans Bold";
 }
 
-.mkt-preview .btn-primary, .blog-preview .btn-primary {
+.mkt-preview .btn-primary, .blog-preview .btn-primary, .mkt-section .btn-primary {
     margin: 0 auto;
 }
 
@@ -481,10 +517,156 @@ table tr td {
 .last-post-box h4 {
     font-family: "Open Sans Bold";
     color: #02050F;
-    margin-top: 0.5em
+    margin-top: 0.5em;
+    transition: .3s;
 }
 
 .last-post-box:hover > h4 {
     color: #5FA8D3;
+}
+
+/*   ABOUT   */
+
+.about-section {
+    color: #1B4865;
+}
+
+.about-infos {
+    width: 65%;
+}
+
+.about-icons .specialties {
+    text-align: center;
+    margin-bottom: 24px;
+    width: 180px;
+}
+
+.about-icons .specialties img{
+    width: 80px;
+}
+
+.contact-reference .flex-container {
+    padding: 50px 0;
+}
+
+.contact-reference .flex-container h4{
+    font-family: "Open Sans Bold";
+    width: 70%;
+}
+
+.contact-reference .btn-primary {
+    margin: 0;
+}
+
+/*     BLOG     */
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.card .img-link {
+    width: 40%;
+}
+
+.card .img-link img {
+    width: 100%;
+    height: auto;
+}
+
+.card .card-body {
+    margin-left: 24px;
+}
+
+.card .card-body .card-title {
+    text-decoration: none;
+    color: #1B4865;
     transition: .3s;
+}
+
+.card .card-body .card-title:hover {
+    color: #001220;
+}
+
+.card .card-body span {
+    font-size: 0.75em;
+    color: #B4AFAF;
+    display: block;
+    font-family: "Open Sans";
+}
+
+.card .card-body p {
+    color: #465E69;
+}
+
+.btn-link {
+    font-family: "Open Sans Light";
+    color: #5FA8D3;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+}
+
+.btn-link:hover::after{
+    width: 0;
+}
+
+.btn-link:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #5FA8D3;
+    transition: width .4s ease-out;
+}
+
+/*   MARKETING   */
+
+.marketing-intro {
+    background: linear-gradient(90deg, #02050F 60%, transparent 100%),
+                linear-gradient(transparent 60%, #02050F 100%),
+                url('./assets/img/Home.jpg') no-repeat right;
+    background-size: contain;
+    padding: 100px 0;
+}
+
+.mkt-section .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.qualities {
+    color: #F3F0F2;
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans";
+    margin-bottom: 80px;
+}
+
+.quality-icon {
+    padding: 40px;
+    border: 3px solid #62DBE7;
+    border-radius: 50%;
+    box-shadow: 1px 0 8px #62DBE7;
+}
+
+.quality-icon img {
+    width: auto;
+    height: 100px;
+}
+
+.quality-type {
+    margin-left: 36px;
+}
+
+.quality-type h4 {
+    text-transform: uppercase;
+    font-family: "Open Sans Bold";
+}
+
+.quality-type .quality-list {
+    list-style: none;
 }
