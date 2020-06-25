@@ -18,7 +18,7 @@
                 </a>
                 <div class="card-body">
                     <a class="card-title" href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
-                    <span><i class="far fa-clock"></i> <?php the_time('j \d\e F \d\e Y'); ?></span>
+                    <span class="post-date"><i class="far fa-clock"></i> <?php the_time('j \d\e F \d\e Y'); ?></span>
                     <?php the_excerpt(); ?>
                     <a class="btn-link" href="<?php the_permalink(); ?>">Ler mais</a>
                 </div>  

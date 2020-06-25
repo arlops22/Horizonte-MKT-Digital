@@ -87,7 +87,9 @@
             $postslist = get_posts( $args );
             foreach ($postslist as $post) :  setup_postdata($post); ?> 
                 <a href="<?php the_permalink(); ?>" class="last-post-box">
+                <div class="post-img">
                     <?php the_post_thumbnail(); ?>
+                </div>
                     <h4><?php the_title(); ?></h4>
                 </a>      
             <?php endforeach; ?>

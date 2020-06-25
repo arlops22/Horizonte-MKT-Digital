@@ -18,7 +18,7 @@
  
 <body>
     <header class="h-header">
-        <div class='container flex-container'>
+        <div class='container'>
             <a class="logo" href='/'>
                 <img alt="Logo Horizonte" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png">
             </a>

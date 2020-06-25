@@ -23,7 +23,18 @@
     font-weight: bold;
 }
 
-/*   RESET   */
+/*  
+
+ ######                            
+ #     # ######  ####  ###### ##### 
+ #     # #      #      #        #   
+ ######  #####   ####  #####    #   
+ #   #   #           # #        #   
+ #    #  #      #    # #        #   
+ #     # ######  ####  ######   #   
+                                    
+
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -115,7 +126,40 @@ table {
 	border-spacing: 0;
 }
 
-/*  BASE  */
+/*  
+
+  #####   #####   #####     ######                       
+ #     # #     # #     #    #     #   ##    ####  ###### 
+ #       #       #          #     #  #  #  #      #      
+ #        #####   #####     ######  #    #  ####  #####  
+ #             #       #    #     # ######      # #      
+ #     # #     # #     #    #     # #    # #    # #      
+  #####   #####   #####     ######  #    #  ####  ###### 
+                                                         
+
+*/
+
+ul {
+    list-style: disc;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+ol {
+    list-style: decimal;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+ol li ol li {
+    list-style: lower-alpha;
+    margin-left: 14px;
+}
+
+table tr td {
+    border: 1px solid #141313;
+    padding: 5px;
+}
 
 .h-section {
     padding: 60px 0;
@@ -124,6 +168,7 @@ table {
 .dark-section {
     background-color: #02050F;
 }
+
 
 .apresentation {
     padding: 70px 0;
@@ -149,6 +194,22 @@ table {
 .small-container {
     width: 60%;
     margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.item-align {
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.content-center {
+    justify-content: center;
 }
 
 .btn-primary {
@@ -242,14 +303,25 @@ table tr td {
     height: 5px;
 }
 
-/*   HEADER   */
+/*
+
+ #     # #######    #    ######  ####### ######  
+ #     # #         # #   #     # #       #     # 
+ #     # #        #   #  #     # #       #     # 
+ ####### #####   #     # #     # #####   ######  
+ #     # #       ####### #     # #       #   #   
+ #     # #       #     # #     # #       #    #  
+ #     # ####### #     # ######  ####### #     # 
+                                                 
+
+*/
 
 .h-header {
     background-color: #1B4865;
     padding: 8px 0;
 }
 
-.flex-container {
+.h-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -260,11 +332,12 @@ table tr td {
     height: 60px;
 }
 
-.h-menu-nav ul {
+.h-menu-nav {
     display: flex;
+    margin: 0;
 }
 
-.h-menu-nav a {
+.h-menu-nav li a {
     font-family: "Open Sans Bold";
     text-decoration: none;
     display: block;
@@ -275,13 +348,13 @@ table tr td {
     content: '';
     display: block;
     height: 3px;
-    transform: scale(0, 1);
+    width: 0;
     background-color: #fff;
-    transition: transform .4s ease-out;
+    transition: width .4s ease-out;
 }
 
 .h-header .h-menu-nav a:hover::after{
-    transform: scale(1);
+    width: 100%
 }
 
 .menu-item {
@@ -317,7 +390,18 @@ table tr td {
     font-size: 1.125em;
 }
 
-/*   MENU HAMBURGUER   */
+/*   
+
+ ######  #     # ######   #####  ####### ######     #     # ####### #     # #     # 
+ #     # #     # #     # #     # #       #     #    ##   ## #       ##    # #     # 
+ #     # #     # #     # #       #       #     #    # # # # #       # #   # #     # 
+ ######  #     # ######  #  #### #####   ######     #  #  # #####   #  #  # #     # 
+ #     # #     # #   #   #     # #       #   #      #     # #       #   # # #     # 
+ #     # #     # #    #  #     # #       #    #     #     # #       #    ## #     # 
+ ######   #####  #     #  #####  ####### #     #    #     # ####### #     #  #####  
+                                                                                    
+
+*/
 
 .hamburger {
     display: none;
@@ -340,7 +424,18 @@ table tr td {
 }
 
 
-/*     FOOTER     */
+/*    
+
+ ####### ####### ####### ####### ####### ######  
+ #       #     # #     #    #    #       #     # 
+ #       #     # #     #    #    #       #     # 
+ #####   #     # #     #    #    #####   ######  
+ #       #     # #     #    #    #       #   #   
+ #       #     # #     #    #    #       #    #  
+ #       ####### #######    #    ####### #     # 
+                                                 
+
+*/
 
 .h-footer {
     color: #F3F0F2;
@@ -402,12 +497,23 @@ table tr td {
 
 
 
-/*   HOME   */
+/*   
+
+ #     # ####### #     # ####### 
+ #     # #     # ##   ## #       
+ #     # #     # # # # # #       
+ ####### #     # #  #  # #####   
+ #     # #     # #     # #       
+ #     # #     # #     # #       
+ #     # ####### #     # ####### 
+                                 
+
+*/
 
 
 .home-intro {
     color: #F3F0F2;
-    padding: 150px 0;
+    padding: 120px 0;
     background: linear-gradient(90deg, #02050F 60%, transparent 100%),
                 url('./assets/img/Home.jpg') no-repeat right;
     background-size: contain;
@@ -431,27 +537,46 @@ table tr td {
     text-align: justify;
 }
 
-.about-preview .flex-container {
-    align-items: unset;
-}
-
 .about-preview img {
     width: 47%;
+    height: auto;
 }
 
 .about-preview .text-box {
     width: 50%;
+    margin-left: 24px;
 }
 
 .mkt-preview {
     text-align: center;
     color: #F3F0F2;
-    background: url('./assets/img/Background.png');
-    background-attachment: fixed;
+    position: relative;
+    background: url('./assets/img/mkt-digital.jpg') no-repeat fixed center;
+    background-size: cover;
+}
+
+.mkt-preview::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgb(2, 5, 15, 0.85); 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.mkt-preview .container {
+    position: relative;
 }
 
 .mkt-preview .flex-container {
     padding: 50px 0;
+}
+
+.procedures {
+    margin: 0 24px;
 }
 
 .procedures p {
@@ -504,14 +629,23 @@ table tr td {
 }
 
 .last-post-box {
-    width: 20%;
-    margin: 36px 0;
+    width: 23%;
+    margin: 36px 1%;
     text-decoration: none;
 }
 
-.last-post-box img {
+.last-post-box .post-img {
+    overflow: hidden;
+}
+
+.last-post-box .post-img img {
     width: 100%;
     height: auto;
+    transition: transform .3s;
+}
+
+.last-post-box .post-img img:hover {
+    transform: scale(1.2);
 }
 
 .last-post-box h4 {
@@ -525,7 +659,18 @@ table tr td {
     color: #5FA8D3;
 }
 
-/*   ABOUT   */
+/*   
+
+  #####  ####### ######  ######  ####### 
+ #     # #     # #     # #     # #       
+ #       #     # #     # #     # #       
+  #####  #     # ######  ######  #####   
+       # #     # #     # #   #   #       
+ #     # #     # #     # #    #  #       
+  #####  ####### ######  #     # ####### 
+                                         
+
+*/
 
 .about-section {
     color: #1B4865;
@@ -558,23 +703,42 @@ table tr td {
     margin: 0;
 }
 
-/*     BLOG     */
+/*    
+
+ ######  #       #######  #####  
+ #     # #       #     # #     # 
+ #     # #       #     # #       
+ ######  #       #     # #  #### 
+ #     # #       #     # #     # 
+ #     # #       #     # #     # 
+ ######  ####### #######  #####  
+                                 
+
+*/
 
 .card {
     display: flex;
     align-items: center;
+    margin: 36px 0;
 }
 
-.card .img-link {
+.img-link {
     width: 40%;
+    overflow: hidden;
 }
 
-.card .img-link img {
+.img-link img {
     width: 100%;
     height: auto;
 }
 
+.img-link img:hover {
+    transition: transform .3s;
+    transform: scale(1.2);
+}
+
 .card .card-body {
+    width: 60%;
     margin-left: 24px;
 }
 
@@ -588,7 +752,7 @@ table tr td {
     color: #001220;
 }
 
-.card .card-body span {
+.post-date {
     font-size: 0.75em;
     color: #B4AFAF;
     display: block;
@@ -620,7 +784,56 @@ table tr td {
     transition: width .4s ease-out;
 }
 
-/*   MARKETING   */
+.pagination {
+    display: flex;
+    font-size: 0.875em;
+    justify-content: center;
+    font-family: "Open Sans Bold";
+    margin-top: 60px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #465E69;
+    display: block;
+    transition: .4s;
+    padding: 5px 5px;
+    margin: 0 4px;
+}
+
+.pagination a:hover {
+    color: #62DBE7;
+}
+
+.pagination span {
+    background-color: #62DBE7;
+    padding: 5px 13px;
+    margin: 0 8px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.pagination .next {
+    border-radius: 0 5px 5px 0;
+}
+
+.pagination .prev {
+    border-radius: 5px 0 0 5px;
+}
+
+
+/*   
+
+ #     #    #    ######  #    # ####### ####### ### #     #  #####  
+ ##   ##   # #   #     # #   #  #          #     #  ##    # #     # 
+ # # # #  #   #  #     # #  #   #          #     #  # #   # #       
+ #  #  # #     # ######  ###    #####      #     #  #  #  # #  #### 
+ #     # ####### #   #   #  #   #          #     #  #   # # #     # 
+ #     # #     # #    #  #   #  #          #     #  #    ## #     # 
+ #     # #     # #     # #    # #######    #    ### #     #  #####  
+                                                                    
+
+*/
 
 .marketing-intro {
     background: linear-gradient(90deg, #02050F 60%, transparent 100%),
@@ -633,8 +846,8 @@ table tr td {
 .mkt-section .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
     flex: 1;
 }
 
@@ -644,10 +857,11 @@ table tr td {
     align-items: center;
     font-family: "Open Sans";
     margin-bottom: 80px;
+    width: 40%;
 }
 
 .quality-icon {
-    padding: 40px;
+    padding: 30px;
     border: 3px solid #62DBE7;
     border-radius: 50%;
     box-shadow: 1px 0 8px #62DBE7;
@@ -655,7 +869,7 @@ table tr td {
 
 .quality-icon img {
     width: auto;
-    height: 100px;
+    height: 70px;
 }
 
 .quality-type {
@@ -669,4 +883,28 @@ table tr td {
 
 .quality-type .quality-list {
     list-style: none;
+    margin: 0;
+}
+
+/*
+
+                                      
+  ####  # #    #  ####  #      ###### 
+ #      # ##   # #    # #      #      
+  ####  # # #  # #      #      #####  
+      # # #  # # #  ### #      #      
+ #    # # #   ## #    # #      #      
+  ####  # #    #  ####  ###### ###### 
+                                      
+
+*/
+
+.single-content {
+    color: #1B4865;
+}
+
+.single-content img {
+    width: 100%;
+    height: auto;
+    margin: 8px 0 18px 0;
 }

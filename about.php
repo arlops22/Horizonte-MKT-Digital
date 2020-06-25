@@ -9,7 +9,7 @@
 </section>
 
 <section class="h-section about-section">
-    <div class="container flex-container">
+    <div class="container flex-container space-between">
         <div class="about-infos">
             <h2 class="h-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
             <p>
@@ -35,7 +35,7 @@
 <section class="contact-reference">
     <div class="container">
         <div class="separator"></div>
-        <div class="flex-container">
+        <div class="flex-container item-align">
             <h4>No mundo pós-digital em que vivemos, o sucesso da sua empresa está diretamente ligado às formas como ela se comunica.</h4>
             <a class="btn-primary" href="#">Venha Trabalhar Conosco</a>
         </div>

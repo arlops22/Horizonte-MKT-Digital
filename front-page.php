@@ -10,7 +10,7 @@
                     ?>
                         <h5 class="h-title">Somos Horizonte marketing Digital</h5>
                         <?php the_content(); ?>
-                        <a class="btn-primary" href="#">Trabalhe Conosco</a>
+                        <a class="btn-primary" href="contato">Trabalhe Conosco</a>
                 <?php    
                     }
                 }
@@ -31,7 +31,7 @@
                 identificação e nada melhor que as redes sociais para aproximar as 
                 pessoas nos dias de hoje.
             </p>
-            <a class="btn-primary" href="#">Ver mais</a>
+            <a class="btn-primary" href="sobre">Ver mais</a>
         </div>
     </div>
 </section>
@@ -41,7 +41,7 @@
         <span class="sub-title">Nosso Trabalho</span>
         <h2 class="secondary-title">Marketing Político</h2>
 
-        <div class="flex-container">
+        <div class="flex-container content-center">
             <div class="procedures">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/graph.png">
                 <p>Análise do cenário</p>
@@ -60,7 +60,7 @@
             </div>
         </div>
         
-        <a class="btn-primary" href="#">Ver mais</a>
+        <a class="btn-primary" href="marketing-politico">Ver mais</a>
     </div>
 </section>
 
@@ -96,12 +96,14 @@
             $postslist = get_posts( $args );
             foreach ($postslist as $post) :  setup_postdata($post); ?> 
                 <a href="<?php the_permalink(); ?>" class="last-post-box">
-                    <?php the_post_thumbnail(); ?>
+                    <div class="post-img">
+                        <?php the_post_thumbnail(); ?>
+                    </div>
                     <h4><?php the_title(); ?></h4>
                 </a>      
             <?php endforeach; ?>
         </div>
-        <a class="btn-primary" href="#">Ver mais</a>
+        <a class="btn-primary" href="blog">Ver mais</a>
     </div>
 </section>
 
