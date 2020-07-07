@@ -1109,3 +1109,9 @@ table tr td {
     height: auto;
     margin: 8px 0 18px 0;
 }
+
+@media(max-width: 768px) {
+    .small-container {
+        width: 90%;
+    }
+}
