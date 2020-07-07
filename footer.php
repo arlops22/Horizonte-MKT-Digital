@@ -19,7 +19,6 @@
                     $args = array(
                         'theme-location' => 'header-menu',
                         'menu_class' => 'h-menu-nav',
-                        'container_class' => 'menu-nav',
                         'container_id'    => 'h-nav',
                     );
 

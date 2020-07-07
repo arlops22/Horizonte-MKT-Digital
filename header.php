@@ -23,13 +23,12 @@
                 <img alt="Logo Horizonte" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png">
             </a>
 
-
+            <div class="menu-nav">
             <?php 
 
                 $args = array(
                     'theme-location' => 'header-menu',
                     'menu_class' => 'h-menu-nav',
-                    'container_class' => 'menu-nav',
                     'container_id'    => 'h-nav',
                 );
 
@@ -41,6 +40,7 @@
                 <a href="https://api.whatsapp.com/send?phone=555521994218517" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a href="https://www.facebook.com/betinhoiecinnit/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/betinhoiecin/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
             </div>
 
             <button id="hamburger" class="hamburger" type="button" >
