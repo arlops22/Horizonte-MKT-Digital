@@ -826,6 +826,40 @@ table tr td {
     margin: 0;
 }
 
+@media(max-width: 1200px) {
+    .contact-reference .flex-container {
+        justify-content: space-between;
+    }
+    .contact-reference .flex-container h4 {
+        width: 60%;
+    }
+}
+
+@media(max-width: 992px) {
+    .contact-reference .flex-container h4 {
+        width: 45%;
+    }
+}
+
+@media(max-width: 768px) {
+    .contact-reference .flex-container, .about-section .flex-container  {
+        flex-direction: column;
+    }
+    .about-infos {
+        width: 100%;
+    }
+    .about-icons .specialties {
+        margin: 24px auto;
+    }
+    .contact-reference .flex-container .btn-primary {
+        font-size: 0.75em;
+    }
+    .contact-reference .flex-container h4 {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
 /*    
 
  ######  #       #######  #####  
@@ -944,6 +978,27 @@ table tr td {
     border-radius: 5px 0 0 5px;
 }
 
+@media(max-width: 992px) {
+    .apresentation p {
+        width: 45%;
+    }
+}
+
+@media(max-width: 768px) {
+    .apresentation p {
+        width: 75%;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card .img-link, .card .card-body {
+        width: 100%;
+    }
+    .card .card-body {
+        margin: 24px 0 0 0;
+    }
+}
+
 
 /*   
 
@@ -1007,6 +1062,29 @@ table tr td {
 .quality-type .quality-list {
     list-style: none;
     margin: 0;
+}
+
+@media(max-width: 992px) {
+    .mkt-section .container {
+        flex-direction: column;
+    }
+    .qualities {
+        width: 70%;
+        margin: 0 auto 48px auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .marketing-intro {
+        background: #02050F;
+    }
+    .qualities {
+        flex-direction: column;
+        width: 100%;
+    }
+    .qualities .quality-icon {
+        margin-bottom: 24px;
+    }
 }
 
 /*
